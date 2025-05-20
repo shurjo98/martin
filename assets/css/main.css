@@ -1,0 +1,67 @@
+/*  Custom tweaks for Sunsir site  */
+
+:root {
+  --brand-primary: #ff3333;
+}
+
+/* Navbar brand colour */
+.navbar-brand {
+  color: var(--brand-primary) !important;
+}
+
+/* Hero section */
+.hero {
+  min-height: 100vh;
+  background: url("../img/S1T.webp") center/contain no-repeat;
+  background-color: #0a0a0a; /* fallback background color */
+  display: flex;
+  position: relative;
+}
+
+.hero::after {          /* overlay for readability */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.45);
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--brand-primary);
+  border: none;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e68524;
+}
+
+/* Call-to-action section */
+.cta {
+  background: linear-gradient(135deg, #111 0%, #444 100%);
+}
+
+/* Responsive tweaks */
+@media (max-width: 575.98px) {
+  .hero {
+    min-height: 70vh;
+  }
+}
+
+
+  .fixed-image-container {
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fixed-image-container img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+  }
