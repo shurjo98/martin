@@ -1,347 +1,292 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sunsir Bangladesh - Industrial Sewing Machine</title>
-  <link rel="icon" type="image/x-icon" sizes="16x16" href="assets/img/logo.ico">
-
-  <!-- Bootstrap 5 -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="assets/css/main.css" />
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Sunsir Bangladesh - Industrial Sewing Machine</title>
+<link href="assets/img/logo.ico" rel="icon" sizes="16x16" type="image/x-icon"/>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="assets/css/main.css" rel="stylesheet"/>
+</link></head>
 <body>
-
-  <!-- Navbar -->
-   
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">
-      <img src="assets/img/logo.webp" alt="Sunsir Logo" height="40">
-    </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navLinks"
-        aria-controls="navLinks"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#specs">Specs</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Catalogue</a></li>
-        <button class="nav-link btn btn-primary text-white px-3 ms-lg-3" onclick="setLanguage('bn')">বাংলা / English</button>
-          
-        </ul>
-   
-      </div>
-      
-    </div>
-   
-  </nav>
-
-  <!-- Hero -->
-  <header class="hero d-flex align-items-center text-white">
-  <div class="container text-center">
-    <h1 class="display-4 fw-bold" data-i18n="headline">Sunsir-S1T Direct-Drive</h1>
-    <p class="lead" data-i18n="description">Power, precision & performance for high-volume apparel factories.</p>
-    <a href="#contact" class="btn btn-primary btn-lg mt-3">Request Pricing</a>
-  </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#">
+<img alt="Sunsir Logo" height="40" src="assets/img/logo.webp"/>
+</a>
+<button aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navLinks" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navLinks">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item"><a class="nav-link" data-i18n="features" href="#features">Features</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="specs" href="#specs">Specs</a></li>
+<li class="nav-item"><a class="nav-link" data-i18n="gallery" href="#gallery">Catalogue</a></li>
+<button class="nav-link btn btn-primary text-white px-3 ms-lg-3"  onclick="toggleLanguage()">বাংলা / English</button>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Hero -->
+<header class="hero d-flex align-items-center text-white">
+<div class="container text-center">
+<h1 class="display-4 fw-bold" data-i18n="headline">Sunsir-S1T Direct-Drive</h1>
+<p class="lead" data-i18n="description">Power, precision &amp; performance for high-volume apparel factories.</p>
+<a class="btn btn-primary btn-lg mt-3" data-i18n="requestPricing" href="#contact">Request Pricing</a>
+</div>
 </header>
-
-  <!-- Features -->
-  <section id="features" class="py-5">
-  <div class="container">
-    <div class="row g-4">
-      
-      <div class="col-md-4 text-center">
-        <i class="bi bi-usb-symbol fs-1 text-primary"></i>
-        <h5 class="mt-3">Smart USB Interface</h5>
-        <p>Update software or charge mobile devices via the built-in USB port—efficient and versatile.</p>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <i class="bi bi-cpu fs-1 text-primary"></i>
-        <h5 class="mt-3">Intelligent Control Board</h5>
-        <p>Proprietary electronic system ensures durability, faster diagnostics, and extended warranty coverage.</p>
-      </div>
-
-      <div class="col-md-4 text-center">
-        <i class="bi bi-lightbulb fs-1 text-primary"></i>
-        <h5 class="mt-3">LED & Stitch Assist</h5>
-        <p>Enjoy precision sewing with LED-lit visibility and smart needle positioning controls built in.</p>
-      </div>
-
-    </div>
-  </div>
+<!-- Features -->
+<section class="py-5" id="features">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-4 text-center">
+<i class="bi bi-usb-symbol fs-1 text-primary"></i>
+<h5 class="mt-3" data-i18n="smartUSB">Smart USB Interface</h5>
+<p data-i18n="smartUSBDesc">Update software or charge mobile devices via the built-in USB port—efficient and versatile.</p>
+</div>
+<div class="col-md-4 text-center">
+<i class="bi bi-cpu fs-1 text-primary"></i>
+<h5 class="mt-3" data-i18n="controlBoard">Intelligent Control Board</h5>
+<p data-i18n="controlBoardDesc">Proprietary electronic system ensures durability, faster diagnostics, and extended warranty coverage.</p>
+</div>
+<div class="col-md-4 text-center">
+<i class="bi bi-lightbulb fs-1 text-primary"></i>
+<h5 class="mt-3" data-i18n="ledAssist">LED &amp; Stitch Assist</h5>
+<p data-i18n="ledAssistDesc">Enjoy precision sewing with LED-lit visibility and smart needle positioning controls built in.</p>
+</div>
+</div>
+</div>
 </section>
-
-  
-
-  <!-- Specs -->
- <section id="specs" class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Technical Specifications – SunSir S1T-M</h2>
-    <div class="table-responsive">
-      <table class="table table-striped align-middle">
-        <tbody>
-          <tr><th scope="row">Model</th><td>S1T-M (Direct Drive Lockstitch)</td></tr>
-          <tr><th scope="row">Needle Type</th><td>DBX1 #11 – #18</td></tr>
-          <tr><th scope="row">Stitch Length</th><td>5 mm max</td></tr>
-          <tr><th scope="row">Presser Foot Height</th><td>5 mm</td></tr>
-          <tr><th scope="row">Applicable Fabrics</th><td>Light to Medium materials (shirts, suits, jeans)</td></tr>
-          <tr><th scope="row">Max Speed</th><td>5000 stitches/min</td></tr>
-          <tr><th scope="row">Power</th><td>220V / 250W servo motor</td></tr>
-          <tr><th scope="row">Features</th><td>USB port, LED light, auto foot lift (optional)</td></tr>
-          <tr><th scope="row">Electricity Use</th><td>&lt;1 kWh/day (energy efficient design)</td></tr>
-          <tr><th scope="row">Package Size</th><td>63 × 25 × 56 cm</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<!-- Specs -->
+<section class="bg-light py-5" id="specs">
+<div class="container">
+<h2 class="text-center mb-4" data-i18n="techSpecTitle">Technical Specifications – SunSir S1T-M</h2>
+<div class="table-responsive">
+<table class="table table-striped align-middle">
+<tbody>
+<tr><th scope="row">Model</th><td>S1T-M (Direct Drive Lockstitch)</td></tr>
+<tr><th scope="row">Needle Type</th><td>DBX1 #11 – #18</td></tr>
+<tr><th scope="row">Stitch Length</th><td>5 mm max</td></tr>
+<tr><th scope="row">Presser Foot Height</th><td>5 mm</td></tr>
+<tr><th scope="row">Applicable Fabrics</th><td>Light to Medium materials (shirts, suits, jeans)</td></tr>
+<tr><th scope="row">Max Speed</th><td>5000 stitches/min</td></tr>
+<tr><th scope="row">Power</th><td>220V / 250W servo motor</td></tr>
+<tr><th data-i18n="features" scope="row">Features</th><td>USB port, LED light, auto foot lift (optional)</td></tr>
+<tr><th scope="row">Electricity Use</th><td>&lt;1 kWh/day (energy efficient design)</td></tr>
+<tr><th scope="row">Package Size</th><td>63 × 25 × 56 cm</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-
-  <!-- ▸ SPECIAL 1 ▸ Overlock Machines ----------------------------------- -->
- <section id="overlock" class="special-section py-5">
-  <div class="container">
-    <div class="row align-items-center gy-4 gx-4">
-      <div class="col-lg-6">
-        <div class="fixed-image-container">
-    <img src="assets/img/R1C.webp" class="img-fluid rounded shadow" alt="SunSir R1C Overlock Machine">
-  </div>
-        </div>
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">SunSir R1C Overlock Series</h2>
-        <p class="lead">A powerful, high-speed direct drive overlock series designed to master everything from delicate knits to heavy-duty seams.</p>
-        <ul class="list-unstyled lh-lg">
-          <li>✔ Multi-fabric compatible — handles both heavy and light materials</li>
-          <li>✔ R2C model includes automatic foot lifter for greater efficiency</li>
-          <li>✔ Self-developed electronic control system with extended warranty</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<!-- ▸ SPECIAL 1 ▸ Overlock Machines ----------------------------------- -->
+<section class="special-section py-5" id="overlock">
+<div class="container">
+<div class="row align-items-center gy-4 gx-4">
+<div class="col-lg-6">
+<div class="fixed-image-container">
+<img alt="SunSir R1C Overlock Machine" class="img-fluid rounded shadow" src="assets/img/R1C.webp"/>
+</div>
+</div>
+<div class="col-lg-6">
+<h2 class="fw-bold mb-3" data-i18n="overlockTitle">SunSir R1C Overlock Series</h2>
+<p class="lead" data-i18n="overlockDesc">A powerful, high-speed direct drive overlock series designed to master everything from delicate knits to heavy-duty seams.</p>
+<ul class="list-unstyled lh-lg">
+<li>✔ Multi-fabric compatible — handles both heavy and light materials</li>
+<li>✔ R2C model includes automatic foot lifter for greater efficiency</li>
+<li>✔ Self-developed electronic control system with extended warranty</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-
-
-
-  <!-- Specs for R1C -->
-<section id="specs-r1c" class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Technical Specifications – SunSir R1C</h2>
-    <div class="table-responsive">
-      <table class="table table-striped align-middle">
-        <tbody>
-          <tr><th scope="row">Model Variants</th><td>R1C-3-02/233, R1C-4-54/433, R1C-5-03/233, R1C-5-03/333, R1C-5-04/435, R1C-6-03/333</td></tr>
-          <tr><th scope="row">Max Speed</th><td>6,500 – 7,000 stitches/min</td></tr>
-          <tr><th scope="row">Needle Type</th><td>DCX27 #11–#21</td></tr>
-          <tr><th scope="row">Thread Count</th><td>1 – 3 threads</td></tr>
-          <tr><th scope="row">Needle Count</th><td>3 – 6 needles</td></tr>
-          <tr><th scope="row">Stitch Length</th><td>3.8 mm fixed (some models adjustable)</td></tr>
-          <tr><th scope="row">Overedge Width</th><td>4 – 6 mm</td></tr>
-          <tr><th scope="row">Differential Feed Ratio</th><td>0.7 – 2.0 (up to 1.5 for some)</td></tr>
-          <tr><th scope="row">Presser Foot Lift</th><td>5 – 7 mm</td></tr>
-          <tr><th scope="row">Voltage & Power</th><td>220V, integrated direct drive motor</td></tr>
-          <tr><th scope="row">Carton Size</th><td>55 × 35 × 56.5 cm</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+<!-- Specs for R1C -->
+<section class="bg-light py-5" id="specs-r1c">
+<div class="container">
+<h2 class="text-center mb-4">Technical Specifications – SunSir R1C</h2>
+<div class="table-responsive">
+<table class="table table-striped align-middle">
+<tbody>
+<tr><th scope="row">Model Variants</th><td>R1C-3-02/233, R1C-4-54/433, R1C-5-03/233, R1C-5-03/333, R1C-5-04/435, R1C-6-03/333</td></tr>
+<tr><th scope="row">Max Speed</th><td>6,500 – 7,000 stitches/min</td></tr>
+<tr><th scope="row">Needle Type</th><td>DCX27 #11–#21</td></tr>
+<tr><th scope="row">Thread Count</th><td>1 – 3 threads</td></tr>
+<tr><th scope="row">Needle Count</th><td>3 – 6 needles</td></tr>
+<tr><th scope="row">Stitch Length</th><td>3.8 mm fixed (some models adjustable)</td></tr>
+<tr><th scope="row">Overedge Width</th><td>4 – 6 mm</td></tr>
+<tr><th scope="row">Differential Feed Ratio</th><td>0.7 – 2.0 (up to 1.5 for some)</td></tr>
+<tr><th scope="row">Presser Foot Lift</th><td>5 – 7 mm</td></tr>
+<tr><th scope="row">Voltage &amp; Power</th><td>220V, integrated direct drive motor</td></tr>
+<tr><th scope="row">Carton Size</th><td>55 × 35 × 56.5 cm</td></tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
-
-  <!-- ▸ SPECIAL 2 ▸ Automation Solutions -------------------------------- -->
-  <section id="template-machine" class="py-5 bg-light">
-  <div class="container">
-    <div class="row align-items-center gy-4 gx-5">
-      <!-- Machine Image -->
-      <div class="col-lg-6">
-         <div class="fixed-image-container">
-        <img src="assets/img/template machine.webp" class="img-fluid rounded shadow" alt="SunSir H919-EM Template Machine">
-        </div>
-      </div>
-
-      <!-- Machine Info -->
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">SunSir H919-EM</h2>
-        <p class="lead">Auto-smart template machine designed for precision sewing on down feather, cotton, suits, shirts, leather, luggage, shoes, and more.</p>
-        <ul class="list-unstyled lh-lg">
-          <li>✔ New thread trimmer design for clean finishes</li>
-          <li>✔ Closed-type gear box ensures durability</li>
-          <li>✔ Rotary hook with mini-oil system for smooth operation</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Technical Table -->
-    <div class="row mt-5">
-      <div class="col-12">
-        <h4 class="text-center mb-4">Technical Specifications H919-EM Template Machine</h4>
-        <div class="table-responsive">
-          <table class="table table-striped align-middle">
-            <tbody>
-              <tr><th scope="row">Sewing Area</th><td>X: ±1300mm, Y: ±500mm</td></tr>
-              <tr><th scope="row">Needle Gauge</th><td>0.5mm – 12.7mm</td></tr>
-              <tr><th scope="row">Speed</th><td>3000 stitches/min</td></tr>
-              <tr><th scope="row">Needle Type</th><td>DBX1 (7#–23#)</td></tr>
-              <tr><th scope="row">Program Input</th><td>USB line or disk</td></tr>
-              <tr><th scope="row">Memory Programs</th><td>999</td></tr>
-              <tr><th scope="row">Motor</th><td>750W direct-drive servo motor</td></tr>
-              <tr><th scope="row">Middle Presser Foot Device</th><td>Independent motor drive</td></tr>
-              <tr><th scope="row">Middle Presser Foot Height</th><td>> 17mm</td></tr>
-              <tr><th scope="row">Outsider Presser Foot Height</th><td>20mm</td></tr>
-              <tr><th scope="row">Pattern Reading Mode</th><td>RFID radio frequency</td></tr>
-              <tr><th scope="row">Air Pressure</th><td>Max 0.5MPa</td></tr>
-              <tr><th scope="row">Power Spec</th><td>220V / 1200W</td></tr>
-              <tr><th scope="row">Machine Weight</th><td>580kg (excluding box)</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-  </div>
+<!-- ▸ SPECIAL 2 ▸ Automation Solutions -------------------------------- -->
+<section class="py-5 bg-light" id="template-machine">
+<div class="container">
+<div class="row align-items-center gy-4 gx-5">
+<!-- Machine Image -->
+<div class="col-lg-6">
+<div class="fixed-image-container">
+<img alt="SunSir H919-EM Template Machine" class="img-fluid rounded shadow" src="assets/img/template machine.webp"/>
+</div>
+</div>
+<!-- Machine Info -->
+<div class="col-lg-6">
+<h2 class="fw-bold mb-3" data-i18n="templateTitle">SunSir H919-EM</h2>
+<p class="lead" data-i18n="templateDesc">Auto-smart template machine designed for precision sewing on down feather, cotton, suits, shirts, leather, luggage, shoes, and more.</p>
+<ul class="list-unstyled lh-lg">
+<li>✔ New thread trimmer design for clean finishes</li>
+<li>✔ Closed-type gear box ensures durability</li>
+<li>✔ Rotary hook with mini-oil system for smooth operation</li>
+</ul>
+</div>
+</div>
+<!-- Technical Table -->
+<div class="row mt-5">
+<div class="col-12">
+<h4 class="text-center mb-4">Technical Specifications H919-EM Template Machine</h4>
+<div class="table-responsive">
+<table class="table table-striped align-middle">
+<tbody>
+<tr><th scope="row">Sewing Area</th><td>X: ±1300mm, Y: ±500mm</td></tr>
+<tr><th scope="row">Needle Gauge</th><td>0.5mm – 12.7mm</td></tr>
+<tr><th scope="row">Speed</th><td>3000 stitches/min</td></tr>
+<tr><th scope="row">Needle Type</th><td>DBX1 (7#–23#)</td></tr>
+<tr><th scope="row">Program Input</th><td>USB line or disk</td></tr>
+<tr><th scope="row">Memory Programs</th><td>999</td></tr>
+<tr><th scope="row">Motor</th><td>750W direct-drive servo motor</td></tr>
+<tr><th scope="row">Middle Presser Foot Device</th><td>Independent motor drive</td></tr>
+<tr><th scope="row">Middle Presser Foot Height</th><td>&gt; 17mm</td></tr>
+<tr><th scope="row">Outsider Presser Foot Height</th><td>20mm</td></tr>
+<tr><th scope="row">Pattern Reading Mode</th><td>RFID radio frequency</td></tr>
+<tr><th scope="row">Air Pressure</th><td>Max 0.5MPa</td></tr>
+<tr><th scope="row">Power Spec</th><td>220V / 1200W</td></tr>
+<tr><th scope="row">Machine Weight</th><td>580kg (excluding box)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
-
-  <!-- ▸ Warehouse Location ------------------------------------------------ -->
-   <style>
+<!-- ▸ Warehouse Location ------------------------------------------------ -->
+<style>
     .city-cards {
       display: none;
     }
   </style>
-
-  <div class="container mt-4">
-
-  <!-- City Filter Buttons -->
-
-
-  
- <!-- City Filter Buttons -->
-
- <section id="warehouse" class="py-5 bg-light">
-
-<h2 class="fw-bold mb-3 text-center">Find Your Nearby Warehouse &amp; Showroom</h2>
-
-
+<div class="container mt-4">
+<!-- City Filter Buttons -->
+<!-- City Filter Buttons -->
+<section class="py-5 bg-light" id="warehouse">
+<h2 class="fw-bold mb-3 text-center" data-i18n="warehouseTitle">Find Your Nearby Warehouse &amp; Showroom</h2>
 <div class="mb-4 d-flex justify-content-center">
-  <div class="btn-group flex-wrap" role="group">
-    <button class="btn btn-primary m-1" onclick="showCity('keraniganj')">South Keraniganj</button>
-    <button class="btn btn-primary m-1" onclick="showCity('jatrabari')">Jatrabari</button>
-    <button class="btn btn-primary m-1" onclick="showCity('mirpur')">Mirpur</button>
-    <button class="btn btn-primary m-1" onclick="showCity('gazipur')">Gazipur</button>
-  </div>
+<div class="btn-group flex-wrap" role="group">
+<button class="btn btn-primary m-1" onclick="showCity('keraniganj')">কেরানীগঞ্জ</button>
+<button class="btn btn-primary m-1" onclick="showCity('jatrabari')">যাত্রাবাড়ী</button>
+<button class="btn btn-primary m-1" onclick="showCity('mirpur')">মিরপুর</button>
+<button class="btn btn-primary m-1" onclick="showCity('gazipur')">গাজীপুর</button>
+
 </div>
-
+</div>
 <!-- South Keraniganj Cards -->
-<div id="keraniganj" class="row row-cols-1 row-cols-md-2 g-4 city-cards">
-
-  <div class="col">
-    <div class="card h-100 shadow-lg border-0 rounded-4">
-      <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+<div class="row row-cols-1 row-cols-md-2 g-4 city-cards" id="keraniganj">
+<div class="col">
+<div class="card h-100 shadow-lg border-0 rounded-4">
+<div class="card-header bg-primary text-white fw-semibold rounded-top-4">
         Mishkat Swing Center
       </div>
-      <div class="card-body">
-        <p class="card-text">📍 ভাই ভাই মার্কেট, দোকান নং-৬, গলি নং-১, অলিনগর, দক্ষিণ কেরানীগঞ্জ, ঢাকা-১৩১০</p>
-        <p class="card-text">📞 <strong>Phone:</strong> <a href="tel:+8801752192477" class="text-dark text-decoration-none">01752-192477</a></p>
+<div class="card-body">
+<p class="card-text">📍 ভাই ভাই মার্কেট, দোকান নং-৬, গলি নং-১, অলিনগর, দক্ষিণ কেরানীগঞ্জ, ঢাকা-১৩১০</p>
+<p class="card-text">📞 <strong>Phone:</strong> <a class="text-dark text-decoration-none" href="tel:+8801752192477">01752-192477</a></p>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-lg border-0 rounded-4">
+<div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+        Suman Swing &amp; Servicing Center
       </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100 shadow-lg border-0 rounded-4">
-      <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
-        Suman Swing & Servicing Center
-      </div>
-      <div class="card-body">
-        <p class="card-text">📍 সনি টাওয়ার-২, নাগর মল্ল রোড, দোকান নং-৭, পূর্ব আগানগর, দক্ষিণ কেরানীগঞ্জ, ঢাকা-১৩১০</p>
-        <p class="card-text">📞 <strong>Phone:</strong> <a href="tel:+8801923438715" class="text-dark text-decoration-none">01923-438715</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100 shadow-lg border-0 rounded-4">
-      <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+<div class="card-body">
+<p class="card-text">📍 সনি টাওয়ার-২, নাগর মল্ল রোড, দোকান নং-৭, পূর্ব আগানগর, দক্ষিণ কেরানীগঞ্জ, ঢাকা-১৩১০</p>
+<p class="card-text">📞 <strong>Phone:</strong> <a class="text-dark text-decoration-none" href="tel:+8801923438715">01923-438715</a></p>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-lg border-0 rounded-4">
+<div class="card-header bg-primary text-white fw-semibold rounded-top-4">
         Messrs Alif Swing Center
       </div>
-      <div class="card-body">
-        <p class="card-text">📍 চরকালীগঞ্জ, টুস্পা টাওয়ার, দক্ষিণ কেরানীগঞ্জ, ঢাকা-১৩১০</p>
-        <p class="card-text">📞 <strong>Phone:</strong> <a href="tel:+8801716582600" class="text-dark text-decoration-none">01716-582600</a>, <a href="tel:+8801999102000" class="text-dark text-decoration-none">01999-102000</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col">
-    <div class="card h-100 shadow-lg border-0 rounded-4">
-      <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
-        Brothers Swing & Engineering
-      </div>
-      <div class="card-body">
-        <p class="card-text">📍 নূর সুপার মার্কেট, গলি #১০, দোকান #২৪৪, চরকালীগঞ্জ, দঃ কেরানীগঞ্জ, ঢাকা-১৩১০</p>
-        <p class="card-text">📞 <strong>Phone:</strong> <a href="tel:+8801722670077" class="text-dark text-decoration-none">01722-670077</a>, <a href="tel:+8801689636097" class="text-dark text-decoration-none">01689-636097</a></p>
-      </div>
-    </div>
-  </div>
+<div class="card-body">
+<p class="card-text">📍 চরকালীগঞ্জ, টুস্পা টাওয়ার, দক্ষিণ কেরানীগঞ্জ, ঢাকা-১৩১০</p>
+<p class="card-text">📞 <strong>Phone:</strong> <a class="text-dark text-decoration-none" href="tel:+8801716582600">01716-582600</a>, <a class="text-dark text-decoration-none" href="tel:+8801999102000">01999-102000</a></p>
 </div>
-
+</div>
+</div>
+<div class="col">
+<div class="card h-100 shadow-lg border-0 rounded-4">
+<div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+        Brothers Swing &amp; Engineering
+      </div>
+<div class="card-body">
+<p class="card-text">📍 নূর সুপার মার্কেট, গলি #১০, দোকান #২৪৪, চরকালীগঞ্জ, দঃ কেরানীগঞ্জ, ঢাকা-১৩১০</p>
+<p class="card-text">📞 <strong>Phone:</strong> <a class="text-dark text-decoration-none" href="tel:+8801722670077">01722-670077</a>, <a class="text-dark text-decoration-none" href="tel:+8801689636097">01689-636097</a></p>
+</div>
+</div>
+</div>
+</div>
 <!-- Jatrabari Cards -->
-<div id="jatrabari" class="row row-cols-1 row-cols-md-2 g-4 city-cards">
-  <div class="col">
-    <div class="card h-100 shadow-lg border-0 rounded-4">
-      <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+<div class="row row-cols-1 row-cols-md-2 g-4 city-cards" id="jatrabari">
+<div class="col">
+<div class="card h-100 shadow-lg border-0 rounded-4">
+<div class="card-header bg-primary text-white fw-semibold rounded-top-4">
         Nahar Trade Center
       </div>
-      <div class="card-body">
-        <p class="card-text">📍 ফিকর টাওয়ার (নিচ তলা), নাগরমহল রোড, দঃ যাত্রাবাড়ী, ঢাকা-১৩১০</p>
-        <p class="card-text">📞 <strong>Phone:</strong> <a href="tel:+8801934555599" class="text-dark text-decoration-none">01934-555599</a>, <a href="tel:+8801932200800" class="text-dark text-decoration-none">01932-200800</a></p>
-      </div>
-    </div>
-  </div>
+<div class="card-body">
+<p class="card-text">📍 ফিকর টাওয়ার (নিচ তলা), নাগরমহল রোড, দঃ যাত্রাবাড়ী, ঢাকা-১৩১০</p>
+<p class="card-text">📞 <strong>Phone:</strong> <a class="text-dark text-decoration-none" href="tel:+8801934555599">01934-555599</a>, <a class="text-dark text-decoration-none" href="tel:+8801932200800">01932-200800</a></p>
 </div>
-
+</div>
+</div>
+</div>
 <!-- Mirpur Cards -->
-<div id="mirpur" class="row row-cols-1 row-cols-md-2 g-4 city-cards">
-  <div class="col">
-    <div class="card h-100 shadow-lg border-0 rounded-4">
-      <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+<div class="row row-cols-1 row-cols-md-2 g-4 city-cards" id="mirpur">
+<div class="col">
+<div class="card h-100 shadow-lg border-0 rounded-4">
+<div class="card-header bg-primary text-white fw-semibold rounded-top-4">
         Shohag Swing Machine Center
       </div>
-      <div class="card-body">
-        <p class="card-text">📍 বিক্রমপুর গার্মেন্ট সিটি, দোকান নং-৩৩০, ৩৩১, ৩৩২, ৩য় মিরপুর রোড, শমরাইট, ঢাকা-১১০০</p>
-        <p class="card-text">📞 <strong>Phone:</strong> <a href="tel:+8801755575525" class="text-dark text-decoration-none">01755-575525</a>, <a href="tel:+8801726555571" class="text-dark text-decoration-none">01726-555571</a>, <a href="tel:+8801710369999" class="text-dark text-decoration-none">01710-369999</a></p>
-      </div>
-    </div>
-  </div>
+<div class="card-body">
+<p class="card-text">📍 বিক্রমপুর গার্মেন্ট সিটি, দোকান নং-৩৩০, ৩৩১, ৩৩২, ৩য় মিরপুর রোড, শমরাইট, ঢাকা-১১০০</p>
+<p class="card-text">📞 <strong>Phone:</strong> <a class="text-dark text-decoration-none" href="tel:+8801755575525">01755-575525</a>, <a class="text-dark text-decoration-none" href="tel:+8801726555571">01726-555571</a>, <a class="text-dark text-decoration-none" href="tel:+8801710369999">01710-369999</a></p>
 </div>
-
+</div>
+</div>
+</div>
 <!-- Gazipur Cards -->
-<div id="gazipur" class="row row-cols-1 row-cols-md-2 g-4 city-cards">
-  <div class="col">
-    <div class="card h-100 shadow-lg border-0 rounded-4">
-      <div class="card-header bg-primary text-white fw-semibold rounded-top-4">
-        Sunsir Bangladesh Warehouse
+<div class="row row-cols-1 row-cols-md-2 g-4 city-cards" id="gazipur">
+<div class="col">
+<div class="card h-100 shadow-lg border-0 rounded-4">
+<div class="card-header bg-primary text-white fw-semibold rounded-top-4">
+        Molla Trading
       </div>
-      <div class="card-body">
-        <p class="card-text">📍 Plot 42, Road 5, Gazipur<br>Dhaka 1340, Bangladesh</p>
-        <p class="card-text">🕒 <strong>Hours:</strong><br>Sat – Thursday: 9 AM – 6 PM<br>Fri: Closed</p>
-        <p class="card-text">📞 <strong>Phone:</strong> <a href="tel:+8801711234567" class="text-dark text-decoration-none">+880 1711 234 567</a></p>
-        <p class="card-text">✉️ <strong>Email:</strong> <a href="mailto:molla.trading.bd@gmail.com" class="text-dark text-decoration-none">molla.trading.bd@gmail.com</a></p>
-      </div>
-    </div>
-  </div>
+<div class="card-body">
+<p class="card-text">📍 Plot 42, Road 5, Gazipur<br/>Dhaka 1340, Bangladesh</p>
+<p class="card-text">🕒 <strong>Hours:</strong><br/>Sat – Thursday: 9 AM – 6 PM<br/>Fri: Closed</p>
+<p class="card-text">📞 <strong>Phone:</strong> <a class="text-dark text-decoration-none" href="tel:+8801711234567">+880 1711 234 567</a></p>
+<p class="card-text">✉️ <strong>Email:</strong> <a class="text-dark text-decoration-none" href="mailto:molla.trading.bd@gmail.com">molla.trading.bd@gmail.com</a></p>
 </div>
-
-
+</div>
+</div>
+</div>
 <style>
   .card {
     transition: transform 0.2s ease;
@@ -352,53 +297,41 @@
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
   }
 </style>
-
-
 </section>
-
-<section id="catalogue" class="py-5 bg-light">
-  <div class="container">
-    <div class="row align-items-center gy-4 gx-5">
-      
-      <!-- Office Image Placeholder -->
-      <div class="col-lg-6">
-        <img src="assets/img/factory.webp" class="img-fluid rounded" alt="Office Image">
-        <!-- Replace the src above with your actual image path -->
-      </div>
-
-      <!-- Catalogue Info & Button -->
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">Download Our Full Catalogue</h2>
-        <p class="lead text-muted mb-4">Explore the complete range of SunSir industrial sewing solutions, including overlock, template, direct-drive, and automation systems — all in one click.</p>
-        <a href="assets/catalogues/sunsir-catalogue.pdf" class="btn btn-primary btn-lg shadow" download>
+<section class="py-5 bg-light" id="catalogue">
+<div class="container">
+<div class="row align-items-center gy-4 gx-5">
+<!-- Office Image Placeholder -->
+<div class="col-lg-6">
+<img alt="Office Image" class="img-fluid rounded" src="assets/img/factory.webp"/>
+<!-- Replace the src above with your actual image path -->
+</div>
+<!-- Catalogue Info & Button -->
+<div class="col-lg-6">
+<h2 class="fw-bold mb-3" data-i18n="catalogueTitle">Download Our Full Catalogue</h2>
+<p class="lead text-muted mb-4" data-i18n="catalogueDesc">Explore the complete range of SunSir industrial sewing solutions, including overlock, template, direct-drive, and automation systems — all in one click.</p>
+<a class="btn btn-primary btn-lg shadow" data-i18n="downloadCatalogue" download="" href="assets/catalogues/sunsir-catalogue.pdf">
           📥 Download Catalogue
         </a>
-      </div>
-
-    </div>
-  </div>
+</div>
+</div>
+</div>
 </section>
-
-
-
-
-  <!-- CTA / Contact -->
- <section id="contact" class="cta text-white text-center py-5 bg-primary">
-  <div class="container">
-    <h2 class="fw-bold mb-4">Ready to upgrade your sewing floor?</h2>
-    <p class="mb-4">Get a tailored quotation within 24 hours.</p>
-    <a href="tel:+8801711234567" class="btn btn-outline-light btn-lg">Call +880 1711 234 567</a>
-  </div>
+<!-- CTA / Contact -->
+<section class="cta text-white text-center py-5 bg-primary" id="contact">
+<div class="container">
+<h2 class="fw-bold mb-4" data-i18n="contactTitle">Ready to upgrade your sewing floor?</h2>
+<p class="mb-4" data-i18n="contactSubtitle">Get a tailored quotation within 24 hours.</p>
+<a class="btn btn-outline-light btn-lg" data-i18n="callNow" href="tel:+8801711234567">Call +880 1711 234 567</a>
+</div>
 </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4">
-    <div class="container text-center small">
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+<div class="container text-center small">
       © 2025 Sunsir Machinery · All rights reserved
     </div>
-  </footer>
-
-  <!-- ▸ Your custom JavaScript (language switcher) -->
+</footer>
+<!-- ▸ Your custom JavaScript (language switcher) -->
 <script>
   const translations = {
   en: {
@@ -457,17 +390,33 @@
   }
 };
 
+function setLanguage(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    const value = translations[lang][key];
+    if (value !== undefined) {
+      el.innerHTML = value;
+    }
+  });
+}
 
-  function setLanguage(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-      const key = el.getAttribute("data-i18n");
-      el.textContent = translations[lang][key];
-    });
-  }
+let currentLang = "en";   // start in English
+
+function toggleLanguage() {
+  // flip the language flag
+  currentLang = (currentLang === "en") ? "bn" : "en";
+
+  // apply translations to every tagged element
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key   = el.getAttribute("data-i18n");
+    const value = translations[currentLang][key];
+    if (value !== undefined) el.innerHTML = value;
+  });
+}
+
 </script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 <!-- JavaScript for Toggling Cards -->
 <script>
   function showCity(cityId) {
@@ -480,5 +429,5 @@
     }
   }
 </script>
-</body>
+</div></body>
 </html>
